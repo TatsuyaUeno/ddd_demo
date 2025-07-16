@@ -1,0 +1,39 @@
+- name: DDDプロジェクトの環境セットアップ
+  hosts: local
+  become: yes
+  tasks:
+    - name: パッケージキャッシュを更新
+      apt:
+        update_cache: yes
+
+    - name: パッケージインストールに必要なパッケージをインストール
+      apt:
+        name:
+          - zip
+          - curl
+          - git
+        state: present
+
+    - name: パッケージインストールに必要なパッケージをインストール（SDK）
+      shell: |
+        curl -s "https://get.sdkman.io" | bash
+      args:
+        warn: false
+
+    - name: OpenJDK をインストール
+      apt:
+        name: openjdk-17-jdk
+        state: present
+
+    - name: Java のバージョン確認
+      command: java -version
+
+    - name: gradle をインストール
+      shell: |
+        source "$HOME/.sdkman/bin/sdkman-init.sh"
+        sdk install gradle 8.13
+      args:
+        executable: /bin/bash
+
+    - name: Gradle のバージョン確認
+      command: gradle -v
