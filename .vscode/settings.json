@@ -1,0 +1,6 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.completion.imports.autoAdd": true,
+    "java.imports.autoImportOnCompletion": true,
+    "java.configuration.updateBuildConfiguration": "interactive"
+}
