@@ -11,3 +11,10 @@
 
 1. プラグイン「Extension Pack for Java」のインストール
 ![Extension Pack for Java](./doc/img/vs_img4.png)
+
+
+## Ansible実行手順　～インフラ構築～
+![Ansible実行手順書](./doc/ansible/Ansible実行手順書.md)
+
+## Dockerコンテナの起動　～データベースサーバの起動～
+![docker手順書](./doc//postgres/docker手順書.md)
