@@ -1,19 +1,15 @@
 package com.example.demo.demo.infra.jooq
 
-import org.springframework.stereotype.Repository
-// CLUD操作を行うためのJOOQのDSLContextをインポート
-import org.jooq.DSLContext
-// テーブル名の定数、JOOQによって参照できる
-// ※import文は、build.gradle.ktsでJOOQのコード生成を設定しているため、生成されたコードを参照する
-import com.example.demo.demo.infra.jooq.tables.TrnTest.TRN_TEST
-
-import com.example.demo.demo.domain.repository.TrnTestRepository
 import com.example.demo.demo.domain.model.TrnTest
+import com.example.demo.demo.domain.repository.TrnTestRepository
+import com.example.demo.demo.infra.jooq.tables.TrnTest.TRN_TEST
+import org.jooq.DSLContext
+import org.springframework.stereotype.Repository
 
 @Repository
 class JooqTrnTestRepository(
     // JOOQのDSLContextをDIする ※コンストラクタに定義が望ましい
-    private val dsl: DSLContext
+    private val dsl: DSLContext,
 ) : TrnTestRepository {
     override fun findByUserId(userId: String): TrnTest? {
         return dsl.selectFrom(TRN_TEST)

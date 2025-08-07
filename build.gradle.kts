@@ -2,6 +2,7 @@ plugins {
     id("org.jetbrains.kotlin.jvm") version "1.9.25"
     id("org.jetbrains.kotlin.plugin.spring") version "1.9.25"
     id("org.springframework.boot") version "3.4.5"
+    id("org.jlleitschuh.gradle.ktlint") version "12.1.1"
     id("io.spring.dependency-management") version "1.1.7"
     id("nu.studer.jooq") version "8.2"
 }
@@ -31,7 +32,7 @@ dependencies {
     implementation("org.jooq:jooq-codegen:3.18.6")
     implementation("org.jooq:jooq-postgres-extensions:3.18.6")
     jooqGenerator("org.postgresql:postgresql:42.7.4") // jOOQのコード生成に必要なPostgreSQLドライバ
-	runtimeOnly("org.postgresql:postgresql:42.7.4")	// 実行環境用
+    runtimeOnly("org.postgresql:postgresql:42.7.4")	// 実行環境用
     compileOnly("org.projectlombok:lombok")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     annotationProcessor("org.projectlombok:lombok")
@@ -69,7 +70,7 @@ jooq {
                     }
                     target.apply {
                         packageName = "com.example.demo.demo.infra.jooq"
-                        directory = "${buildDir}/generated-src/jooq"
+                        directory = "$buildDir/generated-src/jooq"
                     }
                 }
             }

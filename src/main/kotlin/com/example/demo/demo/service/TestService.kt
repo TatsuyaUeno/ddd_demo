@@ -1,13 +1,13 @@
 package com.example.demo.demo.service
 
-import org.springframework.stereotype.Service
 import com.example.demo.demo.domain.model.TrnTest
 import com.example.demo.demo.domain.repository.TrnTestRepository
+import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 
 @Service
 class TestService(
-    private val trnTestRepository: TrnTestRepository
+    private val trnTestRepository: TrnTestRepository,
 ) {
     fun findByUserId(userId: String): TrnTest {
         return trnTestRepository.findByUserId(userId)
@@ -15,9 +15,12 @@ class TestService(
     }
 
     @Transactional
-    fun createUser(userId: String, userName: String): TrnTest {
+    fun createUser(
+        userId: String,
+        userName: String,
+    ): TrnTest {
         val trnTest = TrnTest(userId, userName)
-        trnTestRepository.createUser(trnTest)?: throw IllegalStateException("Failed to create user with ID $userId")
+        trnTestRepository.createUser(trnTest) ?: throw IllegalStateException("Failed to create user with ID $userId")
         // ロールバックされること確認済み
         throw IllegalStateException("Failed to create user with ID $userId")
         return trnTest
