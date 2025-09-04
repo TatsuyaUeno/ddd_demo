@@ -1,0 +1,103 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.1">
+  <diagram name="ページ1" id="SC30ZrcMONx7lcGyFXPA">
+    <mxGraphModel dx="1152" dy="761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VOp8NrvUL0GlvnmONjHd-1" value="ドメインモデル図" style="ellipse;whiteSpace=wrap;html=1;fontSize=17;fontStyle=5" parent="1" vertex="1">
+          <mxGeometry x="40" y="20" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-2" value="◆採用ポジション集約&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="60" y="270" width="230" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-10" value="◆採用選考集約" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="370" y="270" width="430" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-15" value="&lt;u&gt;採用ポジション（Position）&lt;/u&gt;&lt;div&gt;ポジション名&lt;/div&gt;&lt;div&gt;募集ステータス&lt;/div&gt;&lt;div&gt;募集人数&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;align=center;" vertex="1" parent="1">
+          <mxGeometry x="80" y="320" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-16" value="&lt;u&gt;採用選考（Screening）&lt;/u&gt;&lt;div&gt;選考ステータス&lt;/div&gt;&lt;div&gt;応募日&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="414" y="300" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-17" value="&lt;u&gt;応募者（Applicant）&lt;/u&gt;&lt;div&gt;氏名&lt;br&gt;&lt;div&gt;メールアドレス&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="630" y="305" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-18" value="&lt;u&gt;面接（Interview）&lt;/u&gt;&lt;div&gt;面接次数&lt;br&gt;&lt;div&gt;面接日&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="414" y="420" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-19" value="" style="endArrow=none;startArrow=diamondThin;endFill=0;startFill=1;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;startSize=8;endSize=8;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="w_Jno12FK7BiP-NVlFXx-16" target="w_Jno12FK7BiP-NVlFXx-18">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="304" y="373" as="sourcePoint" />
+            <mxPoint x="414" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-20" value="1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="490" y="370" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-22" value="0...n" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="400" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-23" value="" style="endArrow=none;startArrow=diamondThin;endFill=0;startFill=1;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;startSize=8;endSize=8;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="w_Jno12FK7BiP-NVlFXx-16" target="w_Jno12FK7BiP-NVlFXx-17">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="680" y="420" as="sourcePoint" />
+            <mxPoint x="720" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-24" value="1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="574" y="310" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-25" value="1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="604" y="310" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-29" value="1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="335" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-37" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;elbow=vertical;startArrow=block;startFill=1;strokeColor=#545B64;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="w_Jno12FK7BiP-NVlFXx-15" target="w_Jno12FK7BiP-NVlFXx-16">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="240" y="360" as="sourcePoint" />
+            <mxPoint x="384" y="325" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-40" value="0...n" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="384" y="335" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-42" value="&lt;div style=&quot;&quot;&gt;[ルール・制約]&lt;/div&gt;&lt;div style=&quot;&quot;&gt;・募集ステータス：「募集中」「募集中止」&lt;/div&gt;&lt;div style=&quot;&quot;&gt;・募集人数：随時更新可能&lt;/div&gt;&lt;div style=&quot;&quot;&gt;・[検討]&lt;/div&gt;&lt;div style=&quot;&quot;&gt;　└採用された場合、募集人数を減らすか？&lt;/div&gt;" style="shape=delay;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="30" y="480" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-43" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="w_Jno12FK7BiP-NVlFXx-42" target="w_Jno12FK7BiP-NVlFXx-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="590" as="sourcePoint" />
+            <mxPoint x="440" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-44" value="&lt;div style=&quot;&quot;&gt;[ルール・制約]&lt;/div&gt;&lt;div style=&quot;&quot;&gt;・選考ステータス：「選考中」「採用」「不採用」&lt;/div&gt;" style="shape=delay;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="170" y="180" width="276" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-45" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0.469;entryY=1.024;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="w_Jno12FK7BiP-NVlFXx-16" target="w_Jno12FK7BiP-NVlFXx-44">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="290" as="sourcePoint" />
+            <mxPoint x="440" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-46" value="&lt;div style=&quot;&quot;&gt;[ルール・制約]&lt;/div&gt;&lt;div style=&quot;&quot;&gt;・必須項目：「氏名」「メールアドレス」&lt;/div&gt;&lt;div style=&quot;&quot;&gt;・[検討]&lt;/div&gt;&lt;div style=&quot;&quot;&gt;　└「備考欄」があってもよいかも&lt;/div&gt;" style="shape=delay;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="500" y="160" width="276" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-47" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="w_Jno12FK7BiP-NVlFXx-17" target="w_Jno12FK7BiP-NVlFXx-46">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="290" as="sourcePoint" />
+            <mxPoint x="440" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-48" value="&lt;div style=&quot;&quot;&gt;[ルール・制約]&lt;/div&gt;&lt;div style=&quot;&quot;&gt;・選考ステータスが「選考中」の場合、面接を追加できる&lt;br&gt;&lt;/div&gt;" style="shape=delay;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="370" y="550" width="330" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w_Jno12FK7BiP-NVlFXx-49" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="w_Jno12FK7BiP-NVlFXx-48" target="w_Jno12FK7BiP-NVlFXx-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="390" as="sourcePoint" />
+            <mxPoint x="440" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
